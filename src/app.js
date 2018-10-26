@@ -4,7 +4,8 @@
   // Set Header, Subheader and description (based on the content of the config.js file)
   document.querySelector('h1.header').innerHTML = CartONG.config.header;
   document.querySelector('h2.sub-header').innerHTML = CartONG.config.subHeader;
-  document.querySelector('p.description').innerHTML = CartONG.config.description;  
+  document.querySelector('p.description').innerHTML = CartONG.config.description;
+  document.querySelector('p.source').innerHTML = 'Source: ' + CartONG.config.source
 
   var map = L.map('webmap').setView([45.57, 5.9118], 4);
 
