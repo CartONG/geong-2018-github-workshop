@@ -39,6 +39,19 @@ p.source {
   border: none;
 }
 
+.leaflet-control-layers-list {
+  padding: 4px;
+  margin: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+@-moz-document url-prefix() {
+  .leaflet-control-layers-list input {
+    position: relative;
+    top: 4px;
+  }
+}
+
 .attrs-popup table {
   margin-right: 8px;
 }
@@ -50,4 +63,6 @@ p.source {
 .attrs-popup table td {
   padding: 8px 4px;
   text-align: center;
+  max-width: 140px;
+  word-wrap: break-word;
 }
